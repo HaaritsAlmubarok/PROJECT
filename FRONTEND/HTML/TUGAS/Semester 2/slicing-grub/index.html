@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Furniro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm px-10 py-2 sticky top-0 z-50">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <img src="img/logo.png" alt="logo" class="h-16" />
+          <h1 class="font-bold text-2xl p">Furniro</h1>
+        </div>
+
+        <!-- Menu -->
+        <ul class="hidden md:flex gap-10 font-medium text-gray-700">
+          <li><a href="#" class="hover:text-yellow-700">Home</a></li>
+          <li><a href="#" class="hover:text-yellow-700">Shop</a></li>
+          <li><a href="#" class="hover:text-yellow-700">About</a></li>
+          <li><a href="#" class="hover:text-yellow-700">Contact</a></li>
+        </ul>
+
+        <!-- Icon -->
+        <div class="hidden md:flex items-center gap-6 text-gray-700">
+          <!-- User -->
+          <svg
+            img="http://www.w3.org/2000/svg"
+            class="h-5 w-5 cursor-pointer hover:text-yellow-700"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5.121 17.804A9 9 0 1118.879 17.804M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+          </svg>
+
+          <!-- pencarian -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 cursor-pointer hover:text-yellow-700"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+
+          <!-- suka -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 cursor-pointer hover:text-yellow-700"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21.364 4.318 12.682a4.5 4.5 0 010-6.364z"
+            />
+          </svg>
+
+          <!-- keranjang -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 cursor-pointer hover:text-yellow-700"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 6h14M10 21a1 1 0 100-2 1 1 0 000 2zm6 0a1 1 0 100-2 1 1 0 000 2z"
+            />
+          </svg>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden mt-4 flex flex-col gap-4 md:hidden">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+
+    <!-- BREADCRUMB -->
+    <div class="bg-[#f3eee8] px-20 py-4 text-sm text-gray-600">
+      Home > Shop > | <span class="text-black font-medium">Asgaard sofa</span>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="max-w-6xl mx-auto p-6 grid md:grid-cols-2 gap-10">
+
+
+      <!-- Foto-foto di kiri -->
+      <div class="flex gap-4">
+        <!-- Thumbnail -->
+        <div class="flex flex-col gap-3">
+          <img
+            src="img/gambar cilik 1.png"
+            class="rounded-xl cursor-pointer w-28 py-2"
+          />
+          <img
+            src="img/gambar cilik 2.png"
+            class="rounded-xl cursor-pointer w-28 py-2"
+          />
+          <img
+            src="img/gambar cilik 3.png"
+            class="rounded-xl cursor-pointer w-28 py-2"
+          />
+          <img
+            src="img/gambar cilik 4.png"
+            class="rounded-xl cursor-pointer w-28 py-2"
+          />
+        </div>
+
+        <!-- Main Image -->
+        <div class="px-5 rounded-xl">
+          <img src="img/gambar gede.png" class="rounded" />
+        </div>
+      </div>
+
+      
+      <!-- Deskripsi di kanan -->
+      <div>
+        <h1 class="text-4xl font-semibold mb-2">Asgaard sofa</h1>
+        <p class="text-gray-500 mb-2">Rs. 250,000.00</p>
+
+        <!-- Rating -->
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-yellow-500">★★★★★ |</span>
+          <span class="text-gray-400 text-sm">5 Customer Review</span>
+        </div>
+
+        <!-- Deskripsi -->
+        <p class="text-black text-md mb-6">
+          Setting the bar as one of the loudest speakers in its class, the
+          Kilburn is a compact, stout-hearted hero with a well-balanced audio
+          which boasts a clear midrange and extended highs for a sound.
+        </p>
+
+        <!-- ukuran -->
+        <div class="mb-4">
+          <p class="text-sm text-gray-500 mb-2">Size</p>
+          <div class="flex gap-3">
+            <button class="px-3 py-1 border rounded bg-yellow-700 text-white">
+              L
+            </button>
+            <button class="px-3 py-1 border rounded">XL</button>
+            <button class="px-3 py-1 border rounded">XS</button>
+          </div>
+        </div>
+
+        <!-- warna -->
+        <div class="mb-6">
+          <p class="text-sm text-gray-500 mb-2">Color</p>
+          <div class="flex gap-3">
+            <span
+              class="w-6 h-6 rounded-full bg-purple-500 cursor-pointer"
+            ></span>
+            <span class="w-6 h-6 rounded-full bg-black cursor-pointer"></span>
+            <span
+              class="w-6 h-6 rounded-full bg-yellow-700 cursor-pointer"
+            ></span>
+          </div>
+        </div>
+
+        <!-- tombol -->
+        <div class="flex gap-4">
+          <button class="border border-gray-400 px-6 py-2 rounded">
+            - 1 +
+          </button>
+          <button class="border-2 border-gray-900 px-6 py-2 rounded">
+            Add To Cart
+          </button>
+          <button class="border-2 border-gray-900 px-6 py-2 rounded">
+            + Compare
+          </button>
+        </div>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <div class="text-gray-400 text-sm space-y-2">
+          <div class="flex">
+            <span class="w-24">SKU</span>
+            <span class="mx-2">:</span>
+            <span>SS001</span>
+          </div>
+
+          <div class="flex">
+            <span class="w-24">Category</span>
+            <span class="mx-2">:</span>
+            <span>Sofas</span>
+          </div>
+
+          <div class="flex">
+            <span class="w-24">Tags</span>
+            <span class="mx-2">:</span>
+            <span>Sofa, Chair, Home, Shop</span>
+          </div>
+
+          <div class="flex items-center">
+            <span class="w-24">Share</span>
+            <span class="mx-2">:</span>
+            <span class="flex gap-3">
+              <img src="img/facebook.png" class="w-5 h-5 rounded-full" />
+              <img src="img/in.png" class="w-5 h-5 rounded" />
+              <img src="img/twiter.png" class="w-5 h-5 rounded-full" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- DESCRIPTION SECTION -->
+    <div class="max-w-6xl mx-auto mt-10 px-6">
+      <!-- Tabs -->
+      <div class="flex justify-center gap-10 text-gray-400 text-sm mb-6">
+        <button class="text-black font-medium">Description</button>
+        <button>Additional Information</button>
+        <button>Reviews [5]</button>
+      </div>
+
+      <!-- Text -->
+      <div
+        class="text-gray-400 text-sm text-center max-w-3xl mx-auto space-y-4"
+      >
+        <p>
+          Embodying the raw, wayward spirit of rock 'n' roll, the Kilburn
+          portable active stereo speaker takes the unmistakable look and sound
+          of Marshall, unplugs the chords, and takes the show on the road.
+        </p>
+        <p>
+          Weighing in under 7 pounds, the Kilburn is a lightweight piece of
+          vintage styled engineering. Setting the bar as one of the loudest
+          speakers in its class, the Kilburn is a compact, stout-hearted hero
+          with a well-balanced audio which boasts a clear midrange and extended
+          highs.
+        </p>
+      </div>
+
+      <!-- Images -->
+      <div class="grid md:grid-cols-2 gap-6 mt-10">
+        <div class="bg-[#f9f1e7] p-6 rounded-lg flex justify-center">
+          <img src="img/gambar 1.png" class="rounded" />
+        </div>
+        <div class="bg-[#f9f1e7] p-6 rounded-lg flex justify-center">
+          <img src="img/gambar 2.png" class="rounded" />
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="border-t mt-16 pt-10 px-6">
+      <div
+        class="max-w-6xl mx-auto grid md:grid-cols-4 gap-10 text-sm text-gray-500"
+      >
+        <!-- Brand -->
+        <div>
+          <h2 class="font-bold text-black text-lg mb-4">Funiro.</h2>
+          <p>
+            400 University Drive Suite 200 Coral Gables,<br />
+            FL 33134 USA
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h3 class="text-gray-400 mb-4">Links</h3>
+          <ul class="space-y-2 text-black">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <!-- Help -->
+        <div>
+          <h3 class="text-gray-400 mb-4">Help</h3>
+          <ul class="space-y-2 text-black">
+            <li>Payment Options</li>
+            <li>Returns</li>
+            <li>Privacy Policies</li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="max-w-sm">
+          <h3 class="text-gray-400 mb-8 text-lg font-medium">Newsletter</h3>
+
+          <div class="flex items-end gap-4">
+            <div class="flex-1 border-b border-black">
+              <input
+                type="email"
+                placeholder="Enter Your Email Address"
+                class="w-full outline-none py-2 text-gray-500 placeholder-gray-400 bg-transparent"
+              />
+            </div>
+
+            <button
+              class="border-b border-black pb-2 font-bold text-sm tracking-wide"
+            >
+              SUBSCRIBE
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div
+        class="max-w-6xl mx-auto mt-10 border-t text-sm text-black pt-5 pb-10"
+      >
+        2023 funiro. All rights reserved
+      </div>
+    </footer>
+
+    <!-- hamburger menu -->
+    <script>
+      const btn = document.getElementById('menuBtn')
+      const menu = document.getElementById('mobileMenu')
+
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden')
+      })
+    </script>
+  </body>
+</html>
