@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box1 {
+        background-color: rgb(0, 162, 255);
+        width: 400px;
+        padding: 20px;
+      }
+
+      #box2 {
+        background-color: rgb(255, 0, 0);
+        width: 200px;
+        padding: 20px;
+      }
+
+      #title1 {
+        color: rgb(255, 255, 255);
+      }
+
+      #title2 {
+        color: rgb(255, 255, 255);
+      }
+
+      #deskripsi1 {
+        font-size: 20px;
+        color: rgb(43, 0, 255);
+      }
+
+      #deskripsi2 {
+        font-size: 20px;
+        color: rgb(133, 0, 0);
+      }
+
+      #box2 a {
+        color: greenyellow;
+        font-weight: bold;
+      }
+
+      /* font-family: untuk mengubah gaya font */
+      p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      h1 {
+        font-family:Verdana, Geneva, Tahoma, sans-serif ;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- div = mengelompokkan banyak teks -->
+    <!-- style = menyisipkan syntax css ke tag -->
+    <!-- di sebut juga sabagai "inline-css" -->
+
+    <div id="box1">
+      <!-- value warna di css punya 3 metode: -->
+      <!-- 1. Color name (english): blue -->
+      <!-- 2. Hex (heksadesimal): #8c03ccee -->
+      <!-- 3. rgb (red, green, blue): rgb(214, 28, 28) -->
+
+      <!-- padding = jarak elemen dari dalam -->
+      <!-- margin = jarak elemen dari luar -->
+      <h1 id="title1">Belajar Attribute</h1>
+
+      <p id="deskripsi1">
+        Haarits sedang menatap menuju jendela di kamarnya, sudah 1 jam lamanya.
+        di atas meja nya, terdapat buku-buku <i>cerita</i>. Buku-buku cerita itu
+        adalah buku-buku fiksi dan kriminal. Salah satu bukunya adalah
+        <cite>Lord of The Ring: Twin Tower</cite>.
+      </p>
+    </div> <br>
+
+    <div id="box2">
+      <h1 id="title2">OL</h1>
+
+      <!-- atribut type= A,a,I,i -->
+      <ol type="I" id="deskripsi2">
+        <li>hy</li>
+        <li>hy</li>
+        <li>hy</li>
+        <li>hy</li>
+      </ol>
+      <!-- atribut type= circle,square,none -->
+      <ul type="circle" id="deskripsi2">
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+      </ul>
+      <!-- ol>li*3 = shortcurt untuk membuat 1 <ol> dan 3 <li> (bisa di kali sesuka hati)-->
+      <!-- ul>li*3 = shortcurt untuk membuat 1 <ul> dan 3 <li> (bisa di kali sesuka hati)-->
+      <a href="http://www.google.com">Google</a> <br />
+      <a href="http://www.toutube.com">Youtube</a> <br />
+      <a href="http://www.instagram.com">Instagram</a>
+    </div>
+  </body>
+</html>

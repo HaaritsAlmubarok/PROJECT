@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Belajar box model</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Belajar box model</h1>
+    </header>
+    <div class="container">
+      <h2>Bagian 1: Box Model</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="area" id="box1">
+            <h3>Box 1</h3>
+            <p>[Konten ori]</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="area" id="box2">
+            <h3>Box 2</h3>
+            <p>[Konten margin:40px]</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="area" id="box3">
+            <h3>Box 3</h3>
+            <p>[Konten padding:20px]</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="area" id="box4">
+            <h3>Box 4</h3>
+            <p>[Konten border:5px]</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="area" id="box5">
+            <h3>Box 5</h3>
+            <p>[mixing bre]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid"></div>
+      <h2>Bagian 2: Positition</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="area" id="bok1">
+            <h3>positition static</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="area" id="bok2">
+            <h3>positition relative</h3>
+          </div>
+        </div>
+        <div class="card" style="position: relative;">
+          <div class="area" id="bok3">
+            <h3>positition absoulute</h3>
+          </div>
+        </div>
+        <div class="card"  style="height: 400px;">
+          <div class="area" id="bok4">
+            <h3>positition sticky</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="area" id="bok5">
+            <h3>positition fixed</h3>
+          </div>
+        </div>
+      </div>
+      <div class="ghost"></div>
+    </div>
+  </body>
+</html>

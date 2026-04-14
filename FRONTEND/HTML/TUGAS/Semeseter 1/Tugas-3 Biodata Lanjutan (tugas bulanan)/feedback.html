@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <center>
+        <img width="100px" src="images/logo.webp" alt="" />
+        <h1>Formulir Umpan Balik</h1>
+        <p>Kritik, Saran dan Masukan</p>
+        <hr />
+        <div class="nav">
+          <a href="index.html">Beranda</a>
+          <a href="biodata.html">Biodata</a>
+          <a href="jadwal.html">Jadwal</a>
+          <a href="galeri.html">Galeri</a>
+          <a href="feedback.html" class="active">Feedback</a>
+        </div>
+        <hr />
+        <br />
+        <br />
+      </center>
+      <div class="example1">
+        <h4>Formulir Kontak & Saran</h4>
+        <p>
+          Berikan masukan terbaik Anda untuk pengembangan webside profile ini.
+          Semua input bersifat wajib kecuali nama.
+        </p>
+        <form>
+          <div>
+            <label for="inputName">Nama Anda (Opsional)</label><br />
+            <input
+              type="text"
+              name="nama"
+              id="inputName"
+              placeholder="Masukkan nama Anda"
+            />
+          </div>
+          <br />
+          <div>
+            <!-- tips shortcurt : input:[type-nya] -->
+            <label for="inputAge">Umur</label><br />
+            <input
+              type="number"
+              name="umur"
+              id="inputAge"
+              placeholder="Masukkan umur Anda"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="inputAsal">Asal Daerah</label><br />
+            <select name="asal" id="">
+              <option value="">Jawa</option>
+              <option value="">Sumatra</option>
+              <option value="">Kalimantan</option>
+              <option value="">Sulawasi</option>
+              <option value="">Bangka Belitung</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label for="inputEmail">Email Anda</label><br />
+            <input
+              type="email"
+              name="inputEmail"
+              placeholder="nama@.gmail.com"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="inputAge">Rating Kepuasan Webside (Skala 1 - 10)</label>
+            <input
+              type="number"
+              name="rating"
+              id="inputAge"
+              placeholder="Masukkan angka 1 - 10"
+            />
+          </div>
+          <br />
+          <div>
+            <p>Rekomendasi Webside ini?</p>
+            <input type="radio" name="Rekomendasi" id="Ya, Sangat" />
+            <label for="Ya, Sangat">Ya, Sangat</label>
+            <input type="radio" name="Rekomendasi" id="Mungkin Saja" />
+            <label for="Mungkin Saja">Mungkin Saja</label>
+            <input type="radio" name="Rekomendasi" id="Tidak" />
+            <label for="Tidak">Tidak</label>
+          </div>
+          <br />
+          <div>
+            <p>Topik yang paling menarik :</p>
+            <input type="checkbox" name="topik" id="inputBeranda" />
+            <label for="inputBeranda">Beranda</label>
+
+            <input type="checkbox" name="topik" id="inputBiodata" />
+            <label for="inputBiodata">Biodata</label>
+
+            <input type="checkbox" name="topik" id="inputJadwal" />
+            <label for="inputJadwal">Jadwal</label>
+
+            <input type="checkbox" name="topik" id="inputGaleri" />
+            <label for="inputGaleri">Galeri</label>
+
+            <input type="checkbox" name="topik" id="inputFeedback" />
+            <label for="inputFeedback">Feedback</label>
+          </div>
+          <br />
+          <div>
+            <label for="imputPesan">Pesan/Saran Lengkap :</label><br />
+            <textarea
+              name="pesan"
+              id="inputBio"
+              placeholder="Tulis pesan dan saran Anda secara detail di sini...."
+            ></textarea>
+          </div>
+          <br />
+          <div>
+            Upload foto Anda :
+            <input type="file" name="foto" value="upload_foto" /><br />
+          </div>
+          <br /><br />
+          <div class="grid">
+            <button type="reset">Atur Ulang</button>
+            <button type="submit">Kirim Feedback</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+body {
+  background: linear-gradient(to right, #0066ff, #7bf5fe);
+}
+
+.container {
+  display: flex; /* membuat elemen di dalam sebuah kontainer bisa diatur posisinya dengan mudah */
+  flex-direction: column; /* elemen di dalam kontainer flex akan disusun dari atas ke bawah (vertikal) */
+  gap: 12px;
+}
+.card {
+  margin: 0% auto;
+  background: #f9f9f9;
+  width: 1350px;
+  place-content: center;
+  border-radius: 6px;
+  /* blur */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.161
+  ); /* abu-abu dengan transparansi (aturan transpirasinya semakin bawah semakin transparan)*/
+  box-shadow: 0 4px 16px rgba(11, 0, 166, 0.45); /* untuk bayangan */
+}
+.area {
+  width: 200px;
+  height: 200px;
+  place-content: center;
+  box-shadow: 0 4px 16px rgba(11, 0, 166, 0.45);
+  margin: 20px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.flex-area {
+  display: flex;
+  margin: 0% auto;
+  /* gap : jarak antar items */
+  gap: 15px;
+  /* atur posisi secara horizontal */
+  justify-content: center;
+  /* atur posisi items secara horizontal */
+  align-items: center;
+  position: relative;
+}
+
+.alert {
+  width: 98%;
+  background: #cee6ff;
+  justify-content: space-between;
+  border-radius: 5px;
+  cursor: pointer;
+  bottom: 13px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Membuat sudut melengkung sempurna */
+  object-fit: cover; /* Memastikan gambar mengisi area lingkaran */
+  display: block; /* Pastikan elemen gambar mengambil ruang */
+  position: relative;
+  top: 0px;
+  left: 50px;
+}
+.status-badge {
+  position: absolute;
+  top: 76px;
+  right: 54px;
+  background: #00c853; /* hijau */
+  border: 2px solid rgb(9, 128, 255);
+  color: white;
+  padding: 12px 12px;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.card-box {
+  display: flex;
+  justify-content: center; /* biar sejajar di tengah */
+  align-items: center; /* biar sejajar secara vertikal */
+  gap: 10px; /* jarak antar box */
+  margin-bottom: 13px;
+}
+.box {
+  width: 210px;
+  height: 210px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  text-align: center;
+}
+.border-blue {
+  border: 3px solid rgb(0, 4, 255);
+  height: 215px;
+  width: 215px;
+}
+.close {
+  position: absolute;
+  top: 15px; /* jarak dari atas */
+  right: 10px; /* jarak dari kanan */
+}
+.harga {
+  color: rgb(0, 4, 255);
+  font-size: 25px;
+}
+.pilih-paket {
+  background-color: rgb(0, 4, 255);
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+}

@@ -1,0 +1,105 @@
+body {
+  padding: 20px;
+}
+
+body h2 {
+  margin: 20px;
+}
+
+header {
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 250px;
+  width: 250px;
+  border: 2px dashed #333;
+  border-radius: 6px;
+}
+
+.area {
+  width: 200px;
+  height: 200px;
+  place-content: center;
+}
+
+.area h3,
+.area p {
+  color: black;
+  margin: 0 auto;
+}
+.area p {
+  font-size: 14px;
+  color: black;
+}
+
+#box1 {
+  background-color: aquamarine;
+}
+
+#box2 {
+  background-color: brown;
+  margin: 40px;
+}
+
+#box3 {
+  background-color: khaki;
+  padding: 20px;
+}
+
+#box4 {
+  background-color: cadetblue;
+  border: 20px solid yellow;
+}
+
+#box5 {
+  background-color: goldenrod;
+  border: 20px solid yellow;
+  padding: 20px;
+  margin: 40px;
+}
+
+#bok1 {
+  background-color: aquamarine;
+  position: static;
+}
+
+#bok2 {
+  background-color: brown;
+  position: relative;
+  top: 60px;
+  left: 15px;
+}
+
+#bok3 {
+  background-color: khaki;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#bok4 {
+  background-color: cadetblue;
+  position: sticky;
+  bottom: 1px;
+  top: 1px;
+}
+
+#bok5 {
+  background-color: goldenrod;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+.ghost {
+  height: 600px;
+}

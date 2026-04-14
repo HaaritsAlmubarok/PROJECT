@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Basic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-300">
+    <div class="container mx-auto text-center">
+      <!-- color mode diikuti dengan angka di belakang  -->
+      <!-- bg = background, text = teks -->
+      <!-- colorName = kode warna -->
+      <!-- kecerahan = angka dari 50 - 950 -->
+      <!-- ** bg-slate-100, bg-slate-400 -->
+      <!-- ** text-blue-300, text-blue-900 -->
+      <!-- custom slass di tailwind menggunakan [] -->
+      <!-- contoh: text-[33px] (33px = font size) -->
+
+      <!-- m = atur margin -->
+      <!-- mb = atur margin buttom (bawah) -->
+      <!-- p = atur padding -->
+      <!-- pt = atur padding top (atas) -->
+      <!-- mx/px = ukuran kiri-kanan nya -->
+      <!-- my/py = ukuran atas-bawah nya -->
+      <!-- rounder = border radius (sm,md,lg,full) -->
+      <!-- hover: saat elemen di arahkan -->
+
+      <div
+        class="bg-blue-300 sm:bg-blue-400 sm:text-sm md:text-xl md:bg-slate-400 lg:text-4xl xl:text-6xl p-6 font-bold"
+      >
+        HELLO WORLD
+      </div>
+      <br>
+
+      <!-- Flexbox Basic -->
+      <div class="flex flex-col md:flex-row gap-4 mt-4">
+        <div class="bg-blue-300 p-4 flex-1">Box1</div>
+        <div class="bg-blue-500 p-4 flex-1 text-slate-300">Box2</div>
+        <div class="bg-blue-700 p-4 flex-1 text-white">Box3</div>
+      </div>
+      <!-- end flexbox -->
+       <br>
+
+       <!-- .grid = display grid -->
+        <!-- grid-cols = jumlah kolom -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-indigo-400 p-4">Box1</div>
+        <div class="bg-indigo-500 text-slate-800 p-4">Box2</div>
+        <div class="bg-indigo-600 text-slate-300 p-4">Box3</div>
+        <div class="bg-indigo-700 text-white p-4">Box4</div>
+      </div>
+      <br />
+      <button
+        class="rounded-full bg-sky-500 px-5 py-2 text-sm leading-5 font-semibold text-white hover:bg-slate-500"
+      >
+        Save Changes
+      </button>
+    </div>
+  </body>
+</html>

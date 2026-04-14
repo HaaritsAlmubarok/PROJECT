@@ -1,0 +1,75 @@
+.container1 {
+  width: 80%;
+  margin: 0 auto; /* Memusatkan kontainer secara horizontal */
+  padding: 80px; /* Opsional untuk memberi ruang di dalam kontainer */
+  background-color: rgb(224, 241, 255);
+  border-radius: 10px;
+}
+.container2 {
+  width: 80%;
+  margin: 0 auto; /* Memusatkan kontainer secara horizontal */
+  padding: 80px; /* Opsional untuk memberi ruang di dalam kontainer */
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.container3 {
+  width: 1400px;
+  margin: 0 auto;
+  background-color: rgb(248, 248, 248);
+}
+h1 {
+  font-size: 60px;
+  color: rgb(43, 84, 206);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2 {
+  font-size: 40px;
+  color: rgb(0, 154, 0);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.border-left1 {
+  font-size: 20px;
+  background-color: rgb(224, 241, 255);
+  border-left: 3px solid rgb(43, 84, 206);
+  /* mengatur ketebalan border left */
+  padding: 5px;
+}
+.border-left2 {
+  font-size: 20px;
+  background-color: rgb(255, 228, 228);
+  border-left: 3px solid rgb(255, 0, 0);
+  /* mengatur ketebalan border left */
+  padding: 5px;
+  border-radius: 5px;
+}
+@font-face {
+  font-family: 'Bismillah Scibt';
+  src: url(Fonts/Bismillah\ Script.ttf);
+}
+.main {
+  font-family: 'Bismillah Scibt';
+  color: rgb(196, 0, 0);
+  font-size: 70px;
+  text-align: right;
+}
+
+body {
+  background-color: rgb(248, 248, 248);
+}
+.teks-merah {
+  color: red;
+  font-weight: bold;
+}
+.teks-merahh {
+  color: rgb(224, 2, 2);
+}
+h4 {
+  font-size: 30px;
+  text-align: right;
+}
+

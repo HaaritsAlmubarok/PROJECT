@@ -1,0 +1,23 @@
+{
+    "judul" : "Rukun Islam",
+    "jumlah" : 5,
+    "rukun" : ["Syahadat","Sholat","Puasa","Zakat","Haji"],
+    "info" :{
+        "halaman" : 200,
+        "reting" : 9.5
+    },
+    "surah" : [
+        {
+            "no" : 1,
+            "nama" : "Al-Fatihah",
+            "ayat" : 7,
+            "turun" : "Makkah"
+        },
+        {
+            "no" : 2,
+            "nama" : "Al-Baqoroh",
+            "ayat" : 286,
+            "turun" : "Madinah"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+from monster import Monster
+from hero import Hero
+
+class Mage(Hero):
+    def __init__(self, name : str, hp : int):
+        # super() mengakses parent class (Hero)
+        super().__init__(name, hp, job="Mage")
+
+    def ultimate(self, enemy : Monster):
+        damage = 100
+        print()
+        print(f"🌟 {self.name} menggunakan skill 1 : Setrum!")
+        enemy.take_damage(damage)
+
+    def combo(self, enemy : Monster):
+        dmg = 20
+        print()
+        print(f"🌟 {self.name} menggunakan skill combo : Setrum berdahak! {dmg} DMG!")
+        enemy.take_damage(dmg)
+        enemy.take_damage(dmg)
+        enemy.take_damage(dmg)

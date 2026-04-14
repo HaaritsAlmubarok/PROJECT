@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <h1>HTML 5 <b>Form</b></h1>
+      <hr />
+      <form>
+        <div>
+          <!-- tips shortcurt : input : [type-nya] -->
+          <label for="inputName">Nama Lengkap</label>
+          <input type="text" name="nama" id="inputName" />
+        </div>
+        <br />
+
+        <div>
+          <!-- tips shortcurt : input:[type-nya] -->
+          <label for="inputAge">Umur</label>
+          <input type="number" name="Umur" id="inputAge" />
+        </div>
+        <br />
+
+        <div>
+          <label for="imputBio">Biografi</label>
+          <textarea name="bio" id="inputBio"></textarea>
+        </div>
+        <br />
+
+        <div>
+          <p>Jenis Kelamin</p>
+          <input type="radio" name="jenis_kelamin" id="inputLaki-laki" />
+          <label for="inputLaki-laki">Laki-laki</label><br /><br />
+          <input type="radio" name="jenis_kelamin" id="inputPerempuan" />
+          <label for="inputPerempuan">Perempuan</label>
+        </div>
+        <br />
+
+        <div>
+          <p>Hobi</p>
+          <input type="checkbox" name="hobi" id="inputFutsal" />
+          <label for="inputFutsal">Futsal</label><br /><br />
+
+          <input type="checkbox" name="hobi" id="inputRenang" />
+          <label for="inputRenang">Renang</label><br /><br />
+
+          <input type="checkbox" name="hobi" id="inputLari" />
+          <label for="inputLari">Lari</label><br /><br />
+
+          <input type="checkbox" name="hobi" id="inputMembaca" />
+          <label for="inputMembaca">Membaca</label><br /><br />
+
+          <input type="checkbox" name="hobi" id="inputNgoding" />
+          <label for="inputNgoding">Ngoding</label><br /><br />
+
+          <input type="checkbox" name="hobi" id="inputTidur" />
+          <label for="inputTidur">Tidur</label><br />
+        </div>
+        <br />
+
+        <div>
+          <label for="inputAsal">Asal Daerah</label>
+          <!-- tips shortcurt : select>option*4 -->
+          <select name="" id="">
+            <option value="">Jawa</option>
+            <option value="">Sumatra</option>
+            <option value="">Kalimantan</option>
+            <option value="">Sulawasi</option>
+            <option value="">Bangka Belitung</option>
+          </select>
+        </div>
+        <br />
+
+        <div>
+          <label for="inputEmail">Email</label>
+          <input type="email" name="inputEmail" />
+        </div>
+        <br />
+
+        <div>
+          <p>uplooad foto anda:</p>
+          <br />
+          <input type="file" name="foto" value="upload_foto" /><br />
+        </div>
+        <br />
+        <!-- action buttons -->
+        <!-- tips shortcurt : button:[type-nya] -->
+        <div class="grid">
+          <button type="reset">Batalkan</button>
+          <button type="submit">Kirim</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+body {
+  background: linear-gradient(to right, #3e3e3e, #7d7d7d);
+}
+nav {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45); /* untuk bayangan */
+}
+button[type='submit'] {
+  margin-right: 10px;
+}
+img[alt='logo'] {
+  padding-left: 10px;
+}
+h4 {
+  border-left: 3px solid gold;
+  /* mengatur ketebalan border left */
+  padding: 3px;
+  font-size: 18px;
+  color: rgb(0, 0, 194);
+}
+.container {
+  background: #f5f5f57c;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  padding: 10px;
+  border-radius: 5px;
+}
+.gambar-bulat {
+  width: 120px; /* Atur lebar */
+  height: 120px; /* Atur tinggi yang sama dengan lebar */
+  border-radius: 50%; /* Membuat sudut melengkung sempurna */
+  object-fit: cover; /* Memastikan gambar mengisi area lingkaran */
+  display: block; /* Pastikan elemen gambar mengambil ruang */
+}
+table {
+  width: 100%;
+}
+th,
+td {
+  border: 2px solid white;
+  padding: 10px;
+}
+tr:nth-child(odd) {
+  /* nth-child(odd) memilih baris tabel (<tr>) yang berada pada urutan ganjil. */
+  background-color: #e7e7e7;
+}
+
+tr:nth-child(even) {
+  /* nth-child(even) memilih baris tabel (<tr>) yang berada pada urutan genap. */
+  background-color: #f4f4f4;
+}
+.gallery-card {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #2d2d2d;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+.gallery-card:hover {
+  transform: scale(1.03);
+}
+.gallery-image {
+  height: 300px;
+  object-fit: cover; /* Memastikan gambar mengisi area */
+  width: 100%;
+}
+.caption-box {
+  padding: 10px;
+  background: #4a4a4a;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+}

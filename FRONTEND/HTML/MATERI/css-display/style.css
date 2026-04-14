@@ -1,0 +1,46 @@
+body {
+  background: linear-gradient(to right, #0066ff, #7bf5fe);
+}
+
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 200px;
+  width: 200px;
+  /* border: 2px solid #ffffff; */
+  /* border: 2px dashed #333;  */
+  /* ini untuk garis tepi putus putus */
+  border-radius: 6px;
+  /* blur */
+  background: rgba(255, 255, 255, 0.161); /* abu-abu dengan transparansi (aturan transpirasinya semakin bawah semakin transparan)*/
+  box-shadow: 0 4px 16px rgba(11, 0, 166, 0.45); /* untuk bayangan */
+}
+
+.border-blue {
+  border: 4px solid gold;
+  height: 210px;
+  width: 210px;
+}
+
+.flex-area {
+  display: flex;
+  /* gap : jarak antar items */
+  gap: 15px;
+  /* atur posisi secara horizontal */
+  justify-content: center;
+  /* atur posisi items secara horizontal */
+  align-items: center;
+}
+
+.alert{
+  height: 90px;
+  width: auto;
+  background: #7cb1ff;
+  justify-content: space-between;
+}
+
+.alert button{
+  background: rgb(63, 63, 63);
+}

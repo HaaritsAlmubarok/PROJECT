@@ -1,0 +1,90 @@
+/* load local font */
+@font-face {
+  font-family: 'Font Digital';
+  src: url(fonts/digital-7.ttf);
+}
+.digital {
+  font-family: 'Font Digital';
+}
+
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap');
+.tulisan-tangan {
+  font-family: 'Playwrite DE SAS', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.keren {
+  font-family: 'Bebas Neue', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap');
+.latin{
+  font-family: "Bebas Neue", sans-serif;  
+}
+
+.text-tengah {
+  text-align: center;
+}
+.text-kiri {
+  text-align: left;
+}
+.text-kanan {
+  text-align: right;
+}
+.text-rata {
+  text-align: justify;
+}
+.menyala {
+  font-size: 40px;
+  color: rgb(0, 85, 255);
+}
+.gelap {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+.button-save {
+  text-decoration: none;
+  background: rgb(0, 132, 255);
+  color: white;
+  padding: 6px 10px;
+}
+.coret {
+  text-decoration: line-through; /* text coret */
+}
+
+.text-rendah {
+  line-height: 0.8;
+  background-color: yellow;
+  padding: 4px;
+}
+.text-tinggi {
+  line-height: 1.5;
+  background-color: greenyellow;
+  padding: 4px;
+}
+
+.text-rapat {
+  letter-spacing: 0.5;
+  background-color: rgb(255, 0, 0);
+  padding: 4px;
+  font-family: monospace;
+}
+.text-longgar {
+  letter-spacing: 4px;
+  background-color: rgb(255, 121, 31);
+  padding: 4px;
+  font-family: fantasy;
+}
+.text-padat {
+  word-spacing: -2px;
+  background-color: rgb(214, 153, 214);
+  padding: 4px;
+  /* sans-serif*/
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.text-selaw {
+  word-spacing: 8px;
+  background-color: rgb(255, 71, 227);
+  padding: 4px;
+  /* serif */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
